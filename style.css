@@ -1,0 +1,248 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ---------------------------------------------------------------------
+ * Fonts and paragraphs
+ * ------------------------------------------------------------------ */
+
+h1, h2, h3, h4, h5, h6 {font-weight:normal;color:#111;}
+h1 {font-size:3em;line-height:1;margin-bottom:0.5em;}
+h2 {font-size:2em;margin-bottom:0.75em;}
+h3 {font-size:1.5em;line-height:1;margin-bottom:1em;}
+h4 {font-size:1.2em;line-height:1.25;margin-bottom:1.25em;}
+h5 {font-size:1em;font-weight:bold;margin-bottom:1.5em;}
+h6 {font-size:1em;font-weight:bold;}
+
+/*::selection {
+  background: #fff2a8; /* WebKit/Blink Browsers */
+  /* RGB (255, 172, 48)  CFAC30 */
+  /* RGB (255, 152, 00)  CF9800 */
+/*}
+::-moz-selection {
+  background: #fff2a8; /* Gecko Browsers */
+/*}
+
+/* -------------------------------------------------
+* Social Media
+----------------------------------------------------*/
+
+/* Social media icons */
+.fa {
+    float: right; /*keeping each fa icon aligned at right side*/
+  padding: 8px;
+  font-size: 12px;
+  width: 17px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-quora {
+  background: #b30000;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+
+/* Links */
+a {
+	color: #4348DD;          /* RGB (207, 124, 0)*/
+	text-decoration: none;
+}
+
+#shadow a {
+  color: #CF7C00;          /* RGB (207, 124, 0)*/
+  text-decoration: none;
+}
+
+#symseg_icra16 a {
+  color: #4348DD;          /* RGB (207, 124, 0)*/
+  text-decoration: none;
+}
+
+#thesis a {
+  color: #278BBF;          /* RGB (207, 124, 0)*/
+  text-decoration: none;
+}
+
+#symseg a {
+  color: #8B008B;          /* RGB (207, 124, 0)*/
+  text-decoration: none;
+}
+
+body {	
+	font-family: 'PT Sans', sans-serif;
+	background-color: #f6f5f3;
+	height: 100%;
+  margin: 0;                /* This is required to enable elements taking full width of the page */
+  padding: 0;
+}
+
+/* ---------------------------------------------------------------------
+ * Top level container div
+ * ------------------------------------------------------------------ */
+/* This tag specifies the "box" in which all content is placed */
+
+#container {
+	width: 900px;
+	margin: auto;
+}
+
+/* ---------------------------------------------------------------------
+ * Borders for containers
+ * ------------------------------------------------------------------ */
+
+.frame-border {
+  border: 3px solid #4348DD;
+  background: white;
+  border-radius: 5px;
+}
+
+#shadow .frame-border {
+  border: 3px solid #CF7C00;
+  background: white;
+  border-radius: 5px;
+}
+
+#symseg_icra16 .frame-border {
+  border: 3px solid #4348DD;
+  background: white;
+  border-radius: 5px;
+}
+
+#thesis .frame-border {
+  border: 3px solid #278BBF;
+  background: white;
+  border-radius: 5px;
+}
+
+#symseg .frame-border {
+  border: 3px solid #8B008B;
+  background: white;
+  border-radius: 5px;
+}
+
+.frame-padding {
+  padding: 20px 5% 20px 5%;     /* Puts all elements inside the <div> certain distance away from the <div> border */
+}
+
+.frame-padding2 {
+  padding: 30px 10% 30px 10%;     /* Puts all elements inside the <div> certain distance away from the <div> border */
+}
+
+/* ---------------------------------------------------------------------
+ * General page organization
+ * ------------------------------------------------------------------ */
+/* Page is split into three large areas: header, content and footer */
+
+#header {
+  background-color: #white;
+  margin-top: 0px;
+	min-height: 50px;
+	width: 100%;
+}
+
+#content {
+	overflow:hidden;
+}
+
+#footer {
+  margin: 50px 0 0 0;
+	height: 50px;
+	width: 100%;
+}
+
+/* ---------------------------------------------------------------------
+ * Content divs
+ * ------------------------------------------------------------------ */
+
+/* A generic context box with a frame around it */
+.content_box {
+  margin: 30px 0 0 0;               /* Spacing around the div */
+	overflow: hidden;                 /* Makes sure that floated things are inside the <div> */
+  text-align: justify;              /* Stretch the lines to have equal width */
+  line-height: 23px;                /* Spacing between lines in paragraph */
+  box-shadow: 10px 10px 5px #888888;
+}
+
+/* Profile picture */
+#profile_picture img {
+	width: 28%;
+	border: 1px solid #000000;
+  border-radius:25px;
+  margin: 0 7% 0 0;
+  float: left;
+}
+
+/* ---------------------------------------------------------------------
+ * Header divs
+ * ------------------------------------------------------------------ */
+
+/* Positioning of header title within header */
+#header_title {
+	width: 900px;
+	margin: auto;
+}
+
+#project_header_title {
+	width: 900px;
+	margin: auto;
+	text-align: center;
+}
+
+/* ---------------------------------------------------------------------
+ * Footer divs
+ * ------------------------------------------------------------------ */
+
+/* Positioning of header title within header */
+#footer_text {
+	width: 900px;
+	margin: auto;
+	text-align: center;
+  vertical-align: bottom;
+}
+
+/* ---------------------------------------------------------------------
+ * Shadows CSS
+ * ------------------------------------------------------------------ */
+
+#density_figure object {
+	width: 572px;
+  display: block;       /* These three lines center image in div */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#density_figure img {
+	width: 572px;
+  display: block;      
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#segmentation_figure object {
+	width: 624px;
+  display: block;
+  margin-left: 55px;
+  margin-right: auto;
+}
+
+#segmentation_figure img {
+	width: 624px;
+  display: block;
+  margin-left: 55px;
+  margin-right: auto;
+}
